@@ -172,9 +172,12 @@ header {
 }
 
 .bio img {
-    float: left;
-    margin-right: 20px;
+    float: right;
+    margin-left: 20px;
     border-radius: 25%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
 }
 
 h2 {
