@@ -83,21 +83,28 @@ header {
 .content {
     max-width: 500px;
     color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.content h2 {
+.intro {
+    max-width: 60%;
+}
+
+.intro h2 {
     font-size: 3em;
 }
 
-.content h2 span {
+.intro h2 span {
     color: #7d2ae8;
 }
 
-.content h4 {
+.intro h4 {
     font-size: 2em;
 }
 
-.content p {
+.intro p {
     padding: 10px 0 40px 0;
 }
 
@@ -127,6 +134,10 @@ header {
 .btn-group a:hover:nth-child(2) {
     color: #fff;
     background: #7d2ae8;
+}
+
+.profile-image img {
+    border-radius: 50%;
 }
 
 .social-icons {
@@ -169,12 +180,6 @@ header {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bio img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
 }
 
 h2 {
