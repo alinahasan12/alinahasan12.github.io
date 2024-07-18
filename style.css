@@ -32,39 +32,42 @@ header {
 }
 
 .logo span {
-    color: rgb(255, 255, 255);
+    color: rgb(125, 42, 232);
 }
 
 .navigation {
     margin-left: -300px;
 }
 
-.navigation a {
+.navigation button {
     font-size: 1.1em;
     color: #555;
     text-decoration: none;
     margin-right: 40px;
     font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
     transition: .3s;
 }
 
-.navigation a:hover {
-    color: #7d2ae8;
+.navigation button:hover {
+    color: rgb(125, 42, 232);
 }
 
 .btn-talk {
     color: #fff;
     text-decoration: none;
     padding: 8px 35px;
-    background: #7d2ae8;
+    background: rgb(125, 42, 232);
     border-radius: 10px;
-    border: 2px solid #7d2ae8;
+    border: 2px solid rgb(125, 42, 232);
     font-weight: 500;
     transition: .3s;
 }
 
 .btn-talk:hover {
-    color: #7d2ae8;
+    color: rgb(125, 42, 232);
     background: transparent;
 }
 
@@ -72,42 +75,53 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('background.jpg');
+    background: url(background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 30px 100px;
 }
 
 .content {
-    max-width: 500px;
-    color: #555;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .content h2 {
-    font-size: 3em;
+    font-size: 4.5em;
+    color: #fff;
+    font-weight: 700;
 }
 
 .content h2 span {
-    color: #7d2ae8;
+    color: rgb(125, 42, 232);
 }
 
 .content h4 {
-    font-size: 2em;
+    font-size: 2.7em;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 .content p {
-    padding: 10px 0 40px 0;
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 500;
 }
 
-.btn-group a {
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn-group a:nth-child(1) {
     color: #fff;
-    text-decoration: none;
-    padding: 10px 40px;
     background: #7d2ae8;
+    padding: 10px 30px;
     border-radius: 10px;
-    border: 2px solid #7d2ae8;
+    border: 2px solid transparent;
     font-weight: 500;
     transition: .3s;
 }
@@ -122,6 +136,10 @@ header {
     background: transparent;
     margin-left: 30px;
     padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
 }
 
 .btn-group a:hover:nth-child(2) {
@@ -163,7 +181,8 @@ header {
     padding-top: 100px;
 }
 
-.bio, .education, .resume, .courses, .skills, .projects, .experience {
+.bio, .education, .resume, .courses, .skills, .projects, .experience, .contact {
+    display: none;
     background: white;
     margin: 20px 0;
     padding: 20px;
@@ -192,10 +211,6 @@ ul {
 ul li {
     padding: 5px 0;
     border-bottom: 1px solid #ddd;
-}
-
-ul li:last-child {
-    border-bottom: none;
 }
 
 a {
