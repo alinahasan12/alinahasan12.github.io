@@ -238,3 +238,104 @@ footer {
     clear: both;
     display: table;
 }
+/* Add responsive styles */
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 50px;
+    }
+    
+    .home {
+        padding: 20px 50px;
+    }
+    
+    .content h2 {
+        font-size: 2.5em;
+    }
+    
+    .content h4 {
+        font-size: 1.8em;
+    }
+    
+    .btn-group a {
+        padding: 8px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .navigation {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .navigation button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .home {
+        padding: 20px;
+    }
+    
+    .content h2 {
+        font-size: 2em;
+    }
+    
+    .content h4 {
+        font-size: 1.5em;
+    }
+    
+    .btn-group a {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    .btn-talk {
+        padding: 8px 20px;
+    }
+    
+    .home {
+        padding: 10px;
+    }
+    
+    .content h2 {
+        font-size: 1.5em;
+    }
+    
+    .content h4 {
+        font-size: 1.2em;
+    }
+    
+    .btn-group a {
+        padding: 5px 15px;
+    }
+    
+    .social-icons {
+        bottom: 20px;
+    }
+    
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
