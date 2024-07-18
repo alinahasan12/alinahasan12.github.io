@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Show the clicked section
-            document.getElementById(sectionId).style.display = 'block';
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';
+            
+            // Scroll to the clicked section
+            sectionToShow.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
