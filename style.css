@@ -181,7 +181,7 @@ header {
     padding-top: 100px;
 }
 
-.bio, .education, .resume, .courses, .skills, .projects, .experience, .contact {
+.bio, .education, .resume, .skills, .projects, .experience, .contact {
     display: none;
     background: white;
     margin: 20px 0;
