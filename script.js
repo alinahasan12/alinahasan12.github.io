@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.navigation button');
     const sections = document.querySelectorAll('.container > section');
+    const letsTalkButton = document.querySelector('.btn-talk');
 
     // Hide all sections by default except home
     sections.forEach(section => {
@@ -26,8 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
             sectionToShow.scrollIntoView({ behavior: 'smooth' });
         });
     });
-});
 
-function showSection(sectionId) {
-    // This function is left here in case other scripts reference it
-}
+    // Add click event to the "Let's Talk" button to show the contact section
+    letsTalkButton.addEventListener('click', function() {
+        // Hide all sections
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the contact section
+        const contactSection = document.getElementById('contact');
+        contactSection.style.display = 'block';
+        
+        // Scroll to the contact section
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
