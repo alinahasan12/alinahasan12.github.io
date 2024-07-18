@@ -90,7 +90,7 @@ header {
 
 .content h2 {
     font-size: 4.5em;
-    color: #fff;
+    color: #333;
     font-weight: 700;
 }
 
@@ -100,14 +100,14 @@ header {
 
 .content h4 {
     font-size: 2.7em;
-    color: #fff;
+    color: #333;
     font-weight: 700;
     margin-top: 10px;
 }
 
 .content p {
     font-size: 1.2em;
-    color: #fff;
+    color: #333;
     margin: 20px 0;
     font-weight: 500;
 }
