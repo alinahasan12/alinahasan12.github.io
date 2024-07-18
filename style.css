@@ -36,14 +36,14 @@ header {
 }
 
 .navigation {
-    margin-left: -300px;
+    margin-left: -400px;
 }
 
 .navigation a {
     font-size: 1.1em;
     color: #555;
     text-decoration: none;
-    margin-right: 60px;
+    margin-right: 40px;
     font-weight: 500;
     transition: .3s;
 }
