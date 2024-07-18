@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.navigation button');
     const sections = document.querySelectorAll('.container > section');
 
-    // Hide all sections by default
+    // Hide all sections by default except home
     sections.forEach(section => {
         section.style.display = 'none';
     });
+    document.getElementById('home').style.display = 'block';
 
     // Add click event to each button to show the corresponding section
     buttons.forEach(button => {
