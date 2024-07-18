@@ -27,12 +27,12 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     cursor: default;
 }
 
 .logo span {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .navigation {
