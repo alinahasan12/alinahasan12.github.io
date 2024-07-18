@@ -10,16 +10,15 @@
 </head>
 <body>
     <header>
-        <h2 class="logo"><span>A</span>lina.</h2> 
+        <h2 class="logo"><span>A</span>lina.</h2>
         <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#bio">Bio</a>
-            <a href="#education">Education</a>
-            <a href="#resume">Resume</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Work Experience</a>
-            <a href="#contact">Contact</a>
+            <button onclick="showSection('bio')">Bio</button>
+            <button onclick="showSection('education')">Education</button>
+            <button onclick="showSection('resume')">Resume</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('experience')">Work Experience</button>
+            <button onclick="showSection('contact')">Contact</button>
         </nav>
         <a href="#contact" class="btn-talk">Let's Talk</a>
     </header>
@@ -33,9 +32,6 @@
                 <a href="#resume">View Resume</a>
                 <a href="#projects">See Projects</a>
             </div>
-<!--             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/alina-hasan/"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div> -->
         </div>
     </section>
 
@@ -58,73 +54,59 @@
             <iframe src="https://drive.google.com/file/d/1g6mJtYOX2PdDCcxUZFVlw2ltAnnbUVYo/preview" width="100%" height="600"></iframe>
         </section>
 
-        <section id="courses" class="courses">
-            <h2>Relevant Coursework</h2>
-            <ul>
-                <li>Data Structures and Algorithms</li>
-                <li>Distributed Systems</li>
-                <li>Software Engineering Principles</li>
-                <li>Object-Oriented Programming</li>
-                <li>Database Systems</li>
-                <li>Data Mining and Visualization</li>
-                <li>Data Science</li>
-            </ul>
-        </section>
-
         <section id="skills" class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Languages: Python, R, SQL, Java, C, C++, HTML, CSS, XML</li>
-                <li>Frameworks: Node.js, React JS</li>
-                <li>Libraries: OpenCV, NumPy, Scikit-learn, TensorFlow, Keras</li>
-                <li>Tools: Tableau, Microsoft Power BI, Microsoft Office, Git, MATLAB, Google Firebase, AWS</li>
-                <li>Databases: Oracle, MySQL, Microsoft SQL Server</li>
+                <li>Python, R, SQL, Java, C, C++, HTML, CSS, XML</li>
+                <li>Node.js, React JS</li>
+                <li>OpenCV, NumPy, Scikit-learn, TensorFlow, Keras</li>
+                <li>Tableau, Microsoft Power BI, Microsoft Office, Git, MATLAB, Google Firebase, AWS</li>
+                <li>Oracle, MySQL, Microsoft SQL Server</li>
             </ul>
         </section>
 
         <section id="projects" class="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Face Recognition using Eigen Faces | Security and Biometric Authentication (May 2023 - June 2023)</strong>
-                    <p>Created a Python-based facial recognition system with Eigenfaces & PCA for robust security and biometric authentication. Demonstrated problem-solving skills by troubleshooting the system for better performance across various environments. Applied advanced Python programming emphasizing security through biometric solutions.</p>
-                </li>
-                <li><strong>HeartPredict | ML Based Data Analysis to Predict Heart Attack in Patients (January 2023 - May 2023)</strong>
-                    <p>Utilized the R programming language to conduct in-depth analysis of healthcare datasets. Implemented machine learning algorithms to design a data-driven solution predicting the probability of heart attacks. Applied statistical techniques for hypothesis testing and regression analysis.</p>
-                </li>
-                <li><strong>Farm2Table | Empowering Farmers to Sell Directly to Consumers (June 2022 - December 2022)</strong>
-                    <p>Developed a user-interaction web application using HTML, CSS3, and JavaScript for farmer-to-consumer transactions. Played a key role in managing the database using MySQL ensuring efficient data handling and retrieval. Applied software engineering principles to enhance user experience and database efficiency.</p>
-                </li>
-            </ul>
+            <p><strong>Face Recognition using Eigen Faces</strong> | Security and biometric authentication</p>
+            <p>Created a Python-based facial recognition system with Eigenfaces & PCA for robust security and biometric authentication. Demonstrated problem-solving skills by troubleshooting the system for better performance across various environments. Applied advanced Python programming emphasizing security through biometric solutions.</p>
+            
+            <p><strong>HeartPredict</strong> | ML Based Data Analysis to Predict Heart Attack in Patients</p>
+            <p>Utilized the R programming language to conduct in-depth analysis of healthcare datasets. Implemented machine learning algorithms to design a data-driven solution predicting the probability of heart attacks. Applied statistical techniques for hypothesis testing and regression analysis.</p>
+            
+            <p><strong>Farm2Table</strong> | Empowering Farmers to Sell Directly to Consumers</p>
+            <p>Developed a user-interaction web application using HTML CSS3 and JavaScript for farmer-to-consumer transactions. Played a key role in managing the database using MySQL ensuring efficient data handling and retrieval. Applied software engineering principles to enhance user experience and database efficiency.</p>
         </section>
 
         <section id="experience" class="experience">
             <h2>Work Experience</h2>
+            <p><strong>Missouri Institute of Defense & Energy</strong>, Kansas City, Missouri</p>
+            <p>Undergraduate Research Assistant (June 2024-Present)</p>
             <ul>
-                <li><strong>Missouri Institute of Defense & Energy | Kansas City, Missouri</strong>
-                    <p>Undergraduate Research Assistant (June 2024 - Present)</p>
-                    <ul>
-                        <li>Investigated the effectiveness of Large Language Models (LLMs) for niche text classification tasks.</li>
-                        <li>Conducted research on prompt engineering for LLMs focusing on improving their accuracy for a text classification task.</li>
-                        <li>Performed a comparative analysis of LLMs and traditional machine learning models for a text classification task.</li>
-                    </ul>
-                </li>
-                <li><strong>CEI India Pvt LTD | Chennai, Tamil Nadu, India</strong>
-                    <p>Software Development Intern (June 2023 - July 2023)</p>
-                    <ul>
-                        <li>Collaborated on enterprise-level web applications contributing to Python-based feature development.</li>
-                        <li>Engaged in troubleshooting and optimization tasks to enhance system performance.</li>
-                        <li>Delivered impactful presentations on software solutions ensuring effective stakeholder communication.</li>
-                    </ul>
-                </li>
-                <li><strong>Oil and Natural Gas Corporation | Vadodara, Gujarat, India</strong>
-                    <p>Data Science Intern (May 2023 - June 2023)</p>
-                    <ul>
-                        <li>Engineered Python-based facial recognition system using Eigenfaces and PCA for enhanced accuracy.</li>
-                        <li>Demonstrated expertise in troubleshooting and optimizing systems for seamless functionality across diverse environments.</li>
-                        <li>Proficient in Python Eigenfaces PCA with a strong focus on system optimization.</li>
-                    </ul>
-                </li>
+                <li>Investigated the effectiveness of Large Language Models (LLMs) for niche text classification tasks.</li>
+                <li>Conducted research on prompt engineering for LLMs focusing on improving their accuracy for a text classification task.</li>
+                <li>Performed a comparative analysis of LLMs and traditional machine learning models for a text classification task.</li>
             </ul>
+            
+            <p><strong>CEI India Pvt LTD</strong>, Chennai, Tamil Nadu, India</p>
+            <p>Software Development Intern (June 2023-July 2023)</p>
+            <ul>
+                <li>Collaborated on enterprise-level web applications contributing to Python-based feature development.</li>
+                <li>Engaged in troubleshooting and optimization tasks to enhance system performance.</li>
+                <li>Delivered impactful presentations on software solutions ensuring effective stakeholder communication.</li>
+            </ul>
+            
+            <p><strong>Oil and Natural Gas Corporation</strong>, Vadodara, Gujarat, India</p>
+            <p>Data Science Intern (May 2023-June 2023)</p>
+            <ul>
+                <li>Engineered Python-based facial recognition system using Eigenfaces and PCA for enhanced accuracy.</li>
+                <li>Demonstrated expertise in troubleshooting and optimizing systems for seamless functionality across diverse environments.</li>
+                <li>Proficient in Python Eigenfaces PCA with a strong focus on system optimization.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/alina-hasan/">LinkedIn</a></p>
         </section>
     </div>
 
